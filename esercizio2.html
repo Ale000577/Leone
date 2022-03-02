@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .riquadri1{
+            background-color: aqua;
+            
+        }
+        .riquadri2{
+            background-color: black;
+            color: aliceblue;
+            
+        }
+    </style>
+</head>
+<body>
+<div class="riquadri1" id="bianco"  onmouseover="mover(this)"  onmouseout="return1(this)">Primo riquadro</div>
+<div class="riquadri2"id="nero"onmouseover="red(this)"  onmouseout="return2(this)">Secodno riquadro</div>
+   <script>
+       function mover(obj){
+           document.getElementById("bianco").style.backgroundColor="green";
+       }
+
+       function red(obj){
+           document.getElementById("nero").style.backgroundColor="red";
+       }
+
+       function return1(obj){
+           document.getElementById("bianco").style.backgroundColor="aqua";
+       }
+
+       function return2(obj){
+           document.getElementById("nero").style.backgroundColor="black";
+       }
+   </script>
+    
+</body>
+</html>
